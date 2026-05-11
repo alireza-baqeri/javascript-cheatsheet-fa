@@ -21,7 +21,7 @@ const bigInt = 9007199254740991n; // اعداد بزرگ
 
 ### انواع داده مرجع (Reference)
 ```javascript
-// شیء (Object)
+//Object - شئ
 const object = {
   name: "Ali",
   age: 30
@@ -35,7 +35,7 @@ const func = function() {
   return "سلام";
 };
 
-// تاریخ (Date)
+// Date - تاریخ
 const date = new Date();
 
 // RegExp
@@ -44,7 +44,7 @@ const regex = /pattern/g;
 
 ### ساختارهای کنترلی
 ```javascript
-// شرطی
+// Conditional - شرطی
 if (condition) {
   // کد
 } else if (otherCondition) {
@@ -62,7 +62,7 @@ switch (value) {
     // کد
 }
 
-// حلقه‌ها
+// Lopps - حلقه ها
 for (let i = 0; i < 5; i++) { }
 while (condition) { }
 do { } while (condition);
@@ -74,7 +74,7 @@ for (const key in object) { }  // برای شیء‌ها
 
 ### تعریف توابع
 ```javascript
-// تعریف استاندارد
+//standard defention of a function - تعریف استاندارد یک تابع
 function sayHello(name) {
   return `سلام ${name}`;
 }
@@ -82,7 +82,7 @@ function sayHello(name) {
 // Arrow Function
 const sayHi = (name) => `سلام ${name}`;
 
-// توابع به‌عنوان متغیر
+// funcitons as a variable -  تابع ها به عنوان متغیر
 const greet = function(name) {
   return `سلام ${name}`;
 };
@@ -95,7 +95,7 @@ const greet = function(name) {
 
 ### Scope و Closure
 ```javascript
-// محدوده متغیرها (Scope)
+// محدوده ی متغیر - Scope
 var globalVar = "جهانی";      // سطح جهانی
 function test() {
   var localVar = "محلی";      // سطح تابع
