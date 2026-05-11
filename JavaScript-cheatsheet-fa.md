@@ -1,4 +1,4 @@
-<div dir="rtl">
+<div dir="ltr">
 
 ## 1. مفاهیم پایه
 
