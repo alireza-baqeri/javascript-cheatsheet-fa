@@ -4,7 +4,7 @@
 
 ### متغیرها و انواع داده
 ```javascript
-// متغیرهای مدرن
+//modern variables - متغیر های مدرن
 const name = "Ali";             // ثابت (تغییرناپذیر)
 let age = 30;                   // متغیر (قابل تغییر)
 var oldStyle = "legacy";        // قدیمی (استفاده نشود)
