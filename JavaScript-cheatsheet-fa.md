@@ -95,7 +95,7 @@ const greet = function(name) {
 
 ### Scope و Closure
 ```javascript
-// محدوده ی متغیر - Scope
+// Scope - محدوده متغیر
 var globalVar = "جهانی";      // سطح جهانی
 function test() {
   var localVar = "محلی";      // سطح تابع
@@ -121,7 +121,7 @@ counter(); // 2
 
 ### اشیاء و خصوصیات
 ```javascript
-// تعریف شیء
+// Defining an Object - تعریف کردن یک شئ
 const person = {
   name: "Ali",
   age: 30,
@@ -130,7 +130,7 @@ const person = {
   }
 };
 
-// دسترسی به خصوصیات
+// accessing the properties
 person.name;           // نقطه
 person["name"];        // براکت
 
@@ -143,7 +143,7 @@ const newPerson = { ...person, job: "Developer" };
 
 ### کلاس‌ها و وراثت
 ```javascript
-// تعریف کلاس
+// Defining a class
 class Person {
   constructor(name, age) {
     this.name = name;
@@ -154,7 +154,7 @@ class Person {
     return `سلام، من ${this.name} هستم`;
   }
   
-  // متد استاتیک
+  // static method - متود های استاتیک
   static createAnonymous() {
     return new Person("ناشناس", 0);
   }
@@ -210,12 +210,12 @@ const doubled = arr.map((item) => item * 2);
 const filtered = arr.filter((item) => item > 2);
 const sum = arr.reduce((total, item) => total + item, 0);
 
-// جستجو
+// search
 const found = arr.find((item) => item > 3);
 const index = arr.findIndex((item) => item === 3);
 const includes = arr.includes(3);
 
-// ویرایش آرایه
+// Array methods
 arr.push(6);                // اضافه به انتها
 arr.pop();                  // حذف از انتها
 arr.unshift(0);             // اضافه به ابتدا
