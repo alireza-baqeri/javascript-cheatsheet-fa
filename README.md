@@ -1,7 +1,7 @@
 # javascript-cheatsheet-fa
 مرجع فشردهٔ سینتکس و مفاهیم جاوااسکریپت به زبان فارسی – مناسب برای مرور سریع و یادآوری دستورات (Cheat Sheet)
 
-
+[از این لینک](https://github.com/alireza-baqeri/javascript-cheatsheet-fa/blob/main/JavaScript-cheatsheet-fa.md)
 
 # خلاصهٔ سینتکس و گرامر جاوااسکریپت (JavaScript Cheat Sheet - فارسی)
 
