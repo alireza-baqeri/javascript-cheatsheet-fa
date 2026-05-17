@@ -160,7 +160,7 @@ class Person {
   }
 }
 
-// وراثت
+// Inheritance - وراثت
 class Employee extends Person {
   constructor(name, age, job) {
     super(name, age);
@@ -184,7 +184,7 @@ Animal.prototype.speak = function() {
   return `${this.name} صدا می‌کند`;
 };
 
-// This و Context
+// this and Context - This و Context
 function showThis() {
   console.log(this);
 }
@@ -289,7 +289,7 @@ async function fetchUser() {
   }
 }
 
-// فراخوانی
+// Calling - فراخوانی
 fetchUser().then(user => console.log(user));
 ```
 
@@ -297,12 +297,12 @@ fetchUser().then(user => console.log(user));
 
 ### گوش دادن به رویداد
 ```javascript
-// اضافه کردن Event Listener
+// addEventListener - اضافه کردن Event Listener
 element.addEventListener("click", function(event) {
   console.log("کلیک شد");
 });
 
-// حذف Event Listener
+// removeEventListener - حذف Event Listener
 element.removeEventListener("click", handlerFunction);
 
 // Event Object
@@ -333,7 +333,7 @@ child.addEventListener("click", () => console.log("child"), true);
 
 ### Event Delegation
 ```javascript
-// استفاده از رویداد والد برای فرزندان
+// Event Delegation - استفاده از رویداد والد برای فرزندان
 document.getElementById("parent").addEventListener("click", function(e) {
   if (e.target.tagName === "BUTTON") {
     console.log("دکمه کلیک شد");
@@ -357,14 +357,14 @@ try {
 
 ### Error Types
 ```javascript
-// انواع خطاها
+// Error Types - انواع خطاها
 new Error("خطای عمومی");
 new SyntaxError("خطای نحوی");
 new TypeError("خطای نوع");
 new ReferenceError("خطای ارجاع");
 new RangeError("خطای محدوده");
 
-// خطای سفارشی
+// Custom Error - خطای سفارشی
 class CustomError extends Error {
   constructor(message) {
     super(message);
@@ -398,14 +398,14 @@ function throttle(func, limit) {
   };
 }
 
-// استفاده
+// Usage - استفاده
 const debouncedSearch = debounce(search, 300);
 window.addEventListener("resize", throttle(handleResize, 100));
 ```
 
 ### Memoization
 ```javascript
-// ذخیره نتایج تابع برای فراخوانی‌های بعدی
+// Memoization - ذخیره نتایج تابع برای فراخوانی‌های بعدی
 function memoize(fn) {
   const cache = {};
   return function(...args) {
@@ -417,7 +417,7 @@ function memoize(fn) {
   };
 }
 
-// استفاده
+// Usage - استفاده
 const memoizedFib = memoize(function fib(n) {
   if (n <= 1) return n;
   return fib(n - 1) + fib(n - 2);
@@ -480,12 +480,12 @@ const customIterator = {
 
 ### ES Modules
 ```javascript
-// صادرات (export.js)
+// Export - صادرات (export.js)
 export const name = "Ali";
 export function greet() { return "سلام"; }
 export default class Person { }
 
-// واردات (import.js)
+// Import - واردات (import.js)
 import Person, { name, greet } from './export.js';
 import * as Module from './export.js';
 import { name as userName } from './export.js';
@@ -493,14 +493,14 @@ import { name as userName } from './export.js';
 
 ### CommonJS (Node.js)
 ```javascript
-// صادرات (module.js)
+// Export - صادرات (module.js)
 const name = "Ali";
 function greet() { return "سلام"; }
 module.exports = { name, greet };
 // یا
 module.exports.name = "Ali";
 
-// واردات
+// Import - واردات
 const module = require('./module.js');
 const { name, greet } = require('./module.js');
 ```
@@ -509,14 +509,14 @@ const { name, greet } = require('./module.js');
 
 ### DOM Manipulation
 ```javascript
-// انتخاب عناصر
+// Selecting Elements - انتخاب عناصر
 const element = document.getElementById("id");
 const elements = document.getElementsByClassName("class");
 const elements2 = document.getElementsByTagName("div");
 const element2 = document.querySelector(".class");
 const elements3 = document.querySelectorAll("div");
 
-// ویرایش المان‌ها
+// Modifying Elements - ویرایش المان‌ها
 element.innerHTML = "<p>جدید</p>";
 element.textContent = "متن جدید";
 element.setAttribute("id", "newId");
@@ -525,7 +525,7 @@ element.classList.add("active");
 element.classList.remove("inactive");
 element.classList.toggle("visible");
 
-// ایجاد و حذف عناصر
+// Creating and Removing Elements - ایجاد و حذف عناصر
 const newElement = document.createElement("div");
 element.appendChild(newElement);
 element.removeChild(childElement);
@@ -534,7 +534,7 @@ element.replaceChild(newElement, oldElement);
 
 ### Fetch API
 ```javascript
-// درخواست HTTP
+// HTTP Request - درخواست HTTP
 fetch('https://api.example.com/data')
   .then(response => {
     if (!response.ok) {
@@ -545,7 +545,7 @@ fetch('https://api.example.com/data')
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));
 
-// تنظیمات Fetch
+// Fetch Configuration - تنظیمات Fetch
 fetch('https://api.example.com/post', {
   method: 'POST',
   headers: {
