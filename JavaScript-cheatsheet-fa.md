@@ -19,7 +19,7 @@ const symbol = Symbol("id");    // نماد
 const bigInt = 9007199254740991n; // اعداد بزرگ
 ```
 
-### انواع داده مرجع (Reference)
+### Reference (انواع داده مرجع)
 ```javascript
 //Object - شئ
 const object = {
@@ -27,10 +27,10 @@ const object = {
   age: 30
 };
 
-// آرایه (Array)
+// Array (آرایه)
 const array = [1, 2, 3, 4, 5];
 
-// تابع (Function)
+// Function (تابع)
 const func = function() {
   return "سلام";
 };
@@ -238,7 +238,7 @@ str.trim();               // حذف فضاهای خالی
 str.substring(0, 5);      // استخراج بخشی از رشته
 ```
 
-## 5. ناهمگامی (Asynchronous)
+## 5. Asynchronous (ناهمگامی)
 
 ### Callback
 ```javascript
@@ -293,7 +293,7 @@ async function fetchUser() {
 fetchUser().then(user => console.log(user));
 ```
 
-## 6. رویدادها (Events)
+## 6. Events (رویدادها)
 
 ### گوش دادن به رویداد
 ```javascript
